@@ -1,3 +1,5 @@
 .idea
 test.*
 *.tex
+dist
+test
