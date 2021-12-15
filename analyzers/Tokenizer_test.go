@@ -12,7 +12,7 @@ func TestTokenizer(t *testing.T) {
 		t.Fail()
 	}
 
-	token := Token(string(content))
+	token := NewTokenizer(string(content))
 	r := token.Analyze()
 	for _, v := range r {
 		fmt.Println(v)

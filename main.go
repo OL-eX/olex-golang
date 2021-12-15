@@ -1,14 +1,12 @@
 package main
 
-import (
-	"github.com/HerbertHe/olex-golang/analyzers"
-	"syscall/js"
-)
-
-func Token(this js.Value, args []js.Value) interface{} {
-	return analyzers.Token(args[0].String())
-}
+//func Token(this js.Value, args []js.Value) interface{} {
+//	a := analyzers.Token(args[0].String()).Analyze()
+//
+//	return js.ValueOf(a)
+//}
 
 func main()  {
-	js.Global().Set("Token", js.FuncOf(Token))
+	//js.Global().Set("OLeXToken", js.FuncOf(Token))
+	//<-make(chan bool)
 }

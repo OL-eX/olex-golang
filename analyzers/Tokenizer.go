@@ -11,7 +11,7 @@ type Tokenizer struct {
 
 type TokenizerResultsQueueType []string
 
-func Token(text string) *Tokenizer {
+func NewTokenizer(text string) *Tokenizer {
 	t := []rune(text)
 	return &Tokenizer{Text: t}
 }
